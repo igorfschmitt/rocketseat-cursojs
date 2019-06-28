@@ -19,3 +19,12 @@ function renderTodos() {
 }
 
 renderTodos();
+
+function addTodo() {
+    var todOText = inputElement.value;
+
+    todos.push(todoText);
+    inputElement.value = '';
+    renderTodos();
+}
+buttonElement.onclick = addTodo; 
