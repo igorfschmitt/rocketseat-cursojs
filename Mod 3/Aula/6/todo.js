@@ -48,3 +48,7 @@ function deleteTodo(pos) {
     todos.splice(pos, 1);
     renderTodos;
 }
+
+function saveToStorage() {
+    localStorage.setItem('list_todos', todos);
+}
