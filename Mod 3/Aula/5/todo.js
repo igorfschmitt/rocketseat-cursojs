@@ -20,6 +20,7 @@ function renderTodos() {
         linkElement.setAttribute('href', '#'); 
 
         var pos = todos.indexOf(todo);
+        linkElement.setAttribute('onclick', 'deleteTodo(' + pos + ')');
 
        var linkText = document.createTextNode('Excluir');
 
