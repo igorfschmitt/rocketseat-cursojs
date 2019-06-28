@@ -19,6 +19,8 @@ function renderTodos() {
 
         linkElement.setAttribute('href', '#'); 
 
+        var pos = todos.indexOf(todo);
+
        var linkText = document.createTextNode('Excluir');
 
        linkElement.appendChild(linkText);
@@ -40,3 +42,8 @@ function addTodo() {
     renderTodos();
 }
 buttonElement.onclick = addTodo; 
+
+function deleteTodo(pos) {
+    todos.splice(pos, 1);
+    renderTodos;
+}
